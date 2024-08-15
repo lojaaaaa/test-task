@@ -1,4 +1,3 @@
-
 import { ITodo } from 'src/app/store';
 import { TodoItem } from 'src/entities/todo';
 

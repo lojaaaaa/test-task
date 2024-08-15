@@ -1,4 +1,4 @@
-import { Input } from 'antd';
+import { Button, Input } from 'antd';
 import React, { useState } from 'react'
 import { useTodosStore } from 'src/app/store/todos';
 import { v4 as uuidv4 } from 'uuid'; 
@@ -29,9 +29,9 @@ export const CreateTodo = () => {
         onChange={handleChangeInput}
         variant="borderless" 
         size="large" 
-        type="text" 
+        type="text"
       />
-      {inputValue && <button onClick={handleCreateTodo}>Create</button>}
+      {inputValue && <Button htmlType='submit' onClick={handleCreateTodo}>Create</Button>}
     </form>
   );
 };

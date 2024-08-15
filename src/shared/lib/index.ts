@@ -1,0 +1,1 @@
+export { getLocalstorage, setLocalstorage } from './utils'

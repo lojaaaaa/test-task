@@ -17,17 +17,17 @@ export const TodoCollapse = ({ activeKeys, setActiveKeys }: TodoCollapseProps) =
   const items: CollapseProps['items'] = [
     { 
       key: '1',
-      label: `All - ${todos.length}`,
+      label: <p>All  <span className='text-blue-500'>({todos.length})</span></p>,
       children: <TodoList items={todos}/>
     },
     {
       key: '2',
-      label: `Active - ${activeTodos.length}`,
+      label: <p>Active  <span className='text-green-500'>({activeTodos.length})</span></p>,
       children: <TodoList items={activeTodos}/>,
     },
     {
       key: '3',
-      label: `Completed - ${completedTodos.length}`,
+      label: <p>Completed  <span className='text-red-500'>({completedTodos.length})</span></p>,
       children: <TodoList items={completedTodos}/>,
     },
   ];

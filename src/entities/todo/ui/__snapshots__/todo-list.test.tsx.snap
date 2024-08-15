@@ -1,0 +1,59 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TodoList Component > matches the snapshot 1`] = `
+<DocumentFragment>
+  <ul
+    class="flex flex-col"
+  >
+    <li
+      class="px-2 py-4 border-b border-gray-200"
+    >
+      <label
+        class="ant-checkbox-wrapper text-lg css-dev-only-do-not-override-1c0na6j"
+      >
+        <span
+          class="ant-checkbox ant-wave-target css-dev-only-do-not-override-1c0na6j"
+        >
+          <input
+            class="ant-checkbox-input"
+            type="checkbox"
+          />
+          <span
+            class="ant-checkbox-inner"
+          />
+        </span>
+        <span>
+          First task
+        </span>
+      </label>
+    </li>
+    <li
+      class="px-2 py-4 border-b border-gray-200"
+    >
+      <label
+        class="ant-checkbox-wrapper ant-checkbox-wrapper-checked text-lg css-dev-only-do-not-override-1c0na6j"
+      >
+        <span
+          class="ant-checkbox ant-wave-target css-dev-only-do-not-override-1c0na6j ant-checkbox-checked"
+        >
+          <input
+            checked=""
+            class="ant-checkbox-input"
+            type="checkbox"
+          />
+          <span
+            class="ant-checkbox-inner"
+          />
+        </span>
+        <span>
+          <span
+            class="line-through"
+          >
+            Second task
+          </span>
+        </span>
+      </label>
+    </li>
+  </ul>
+</DocumentFragment>
+`;

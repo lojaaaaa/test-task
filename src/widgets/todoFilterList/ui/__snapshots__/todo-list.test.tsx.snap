@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TodoFilterList Component > matches the snapshot 1`] = `
+<DocumentFragment>
+  <ul
+    class="flex gap-4"
+  >
+    <li
+      class="cursor-pointer rounded-lg p-2 border border-red-200"
+    >
+      All
+    </li>
+    <li
+      class="cursor-pointer p-2"
+    >
+      Active
+    </li>
+    <li
+      class="cursor-pointer p-2"
+    >
+      Completed
+    </li>
+  </ul>
+</DocumentFragment>
+`;
