@@ -10,8 +10,16 @@ import { TodoFilterList } from "src/widgets/todoFilterList";
 export const Main = () => {
   const [activeKeys, setActiveKeys] = useState(['1']);
 
+  const toggleActiveKey = (key: string) => {
+    setActiveKeys((prev) =>
+      prev.includes(key)
+        ? prev.filter((activeKey) => activeKey !== key)
+        : [...prev, key]
+    );
+  };
+
   return (
-    <div className="pt-32">
+    <div className="py-32">
       <h1 className="text-8xl font-extralight text-center text-red-300 mb-8">
         todos
       </h1>
@@ -21,7 +29,7 @@ export const Main = () => {
         <TodoCollapse activeKeys={activeKeys} setActiveKeys={setActiveKeys} />
 
         <div className="flex justify-between items-center p-4 text-gray-500 border-t-2 border-gray-200">  
-          <TodoFilterList activeKey={activeKeys[0]} setActiveKey={(key) => setActiveKeys([key])} />
+          <TodoFilterList activeKeys={activeKeys} toggleActiveKey={toggleActiveKey} />
           <ClearCompletedButton />
         </div>
       </div>
